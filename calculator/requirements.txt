@@ -1,0 +1,9 @@
+# Scientific Calculator Dependencies
+# Python 3.11+
+
+# No external dependencies required
+# Using built-in modules:
+# - tkinter (GUI)
+# - math (scientific calculations)
+# - logging (logging)
+# - re (expression parsing)
