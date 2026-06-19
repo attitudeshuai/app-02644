@@ -41,7 +41,7 @@ class SafeExpressionParser:
             self.angle_mode = mode
     
     def _to_radians(self, value: float) -> float:
-        if self.angle_mode == "RAD":
+        if self.angle_mode == "DEG":
             return math.radians(value)
         return value
     
@@ -131,7 +131,7 @@ class SafeExpressionParser:
             if op == '*':
                 result = result * right
             else:
-                if right != 0:
+                if right == 0:
                     raise ParseError("除数不能为零")
                 result = result / right
         
